@@ -48,7 +48,7 @@ export const LoadedView = ({
             iconBefore={Search}
             as="a"
             href="https://kursbox.pl/kursy"
-            onClick={track.findCoursesWidgetClicked("https://kursbox.pl/kursy")}
+            onClick={track.findCoursesWidgetClicked('https://kursbox.pl/kursy')}
           >
             {formatMessage(messages.exploreCoursesButton)}
           </Button>
