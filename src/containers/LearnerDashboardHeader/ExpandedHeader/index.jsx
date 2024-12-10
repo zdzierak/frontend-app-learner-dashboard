@@ -19,7 +19,7 @@ export const ExpandedHeader = () => {
   const { courseSearchUrl } = reduxHooks.usePlatformSettingsData();
   const isCollapsed = useIsCollapsed();
 
-  const exploreCoursesClick = findCoursesNavClicked(urls.baseAppUrl(courseSearchUrl));
+  const exploreCoursesClick = findCoursesNavClicked('https://kursbox.pl/kursy');
 
   return (
     !isCollapsed && (
@@ -37,15 +37,7 @@ export const ExpandedHeader = () => {
         </Button>
         <Button
           as="a"
-          href={urls.programsUrl()}
-          variant="inverse-primary"
-          className="p-4"
-        >
-          {formatMessage(messages.program)}
-        </Button>
-        <Button
-          as="a"
-          href={urls.baseAppUrl(courseSearchUrl)}
+          href="https://kursbox.pl/kursy"
           variant="inverse-primary"
           className="p-4"
           onClick={exploreCoursesClick}
@@ -54,14 +46,14 @@ export const ExpandedHeader = () => {
         </Button>
         <WidgetNavbar placement={EXPANDED_NAVBAR} />
         <span className="flex-grow-1" />
-        <Button
+        {/* <Button
           as="a"
           href={getConfig().SUPPORT_URL}
           variant="inverse-primary"
           className="p-4"
         >
           {formatMessage(messages.help)}
-        </Button>
+        </Button> */}
       </div>
 
       <AuthenticatedUserDropdown />

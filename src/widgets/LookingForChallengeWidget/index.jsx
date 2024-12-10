@@ -30,8 +30,8 @@ export const LookingForChallengeWidget = () => {
         <h5>
           <Hyperlink
             variant="brand"
-            destination={baseAppUrl(courseSearchUrl)}
-            onClick={track.findCoursesWidgetClicked(baseAppUrl(courseSearchUrl))}
+            destination="https://kursbox.pl/kursy"
+            onClick={track.findCoursesWidgetClicked('https://kursbox.pl/kursy')}
             className="d-flex align-items-center"
           >
             {formatMessage(messages.findCoursesButton, { arrow: arrowIcon })}

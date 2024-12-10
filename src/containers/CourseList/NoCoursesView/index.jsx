@@ -28,7 +28,7 @@ export const NoCoursesView = () => {
       <Button
         variant="brand"
         as="a"
-        href={baseAppUrl(courseSearchUrl)}
+        href="https://kursbox.pl/kursy"
         iconBefore={Search}
       >
         {formatMessage(messages.exploreCoursesButton)}

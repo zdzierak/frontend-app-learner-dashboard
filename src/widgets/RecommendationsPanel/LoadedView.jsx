@@ -50,8 +50,8 @@ export const LoadedView = ({
             variant="tertiary"
             iconBefore={Search}
             as="a"
-            href={baseAppUrl(courseSearchUrl)}
-            onClick={track.findCoursesWidgetClicked(baseAppUrl(courseSearchUrl))}
+            href="https://kursbox.pl/kursy"
+            onClick={track.findCoursesWidgetClicked("https://kursbox.pl/kursy")}
           >
             {formatMessage(messages.exploreCoursesButton)}
           </Button>
