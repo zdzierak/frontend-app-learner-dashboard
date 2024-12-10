@@ -17,7 +17,7 @@ const appMessages = {
   'fr-ca': frcaMessages,
   'pt-br': ptbrMessages,
   'zh-cn': zhcnMessages,
-  pl: plMessages
+  pl: plMessages,
 };
 
 export default [

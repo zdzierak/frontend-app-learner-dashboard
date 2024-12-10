@@ -2,17 +2,13 @@ import React from 'react';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Button, Image } from '@edx/paragon';
 import { Search } from '@edx/paragon/icons';
-import { baseAppUrl } from 'data/services/lms/urls';
 
 import emptyCourseSVG from 'assets/empty-course.svg';
-import { reduxHooks } from 'hooks';
-
 import messages from './messages';
 import './index.scss';
 
 export const NoCoursesView = () => {
   const { formatMessage } = useIntl();
-  const { courseSearchUrl } = reduxHooks.usePlatformSettingsData();
   return (
     <div
       id="no-courses-content-view"

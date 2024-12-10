@@ -1,12 +1,9 @@
 import React from 'react';
 
-import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Button } from '@edx/paragon';
 
 import WidgetNavbar from 'containers/WidgetContainers/WidgetNavbar';
-import urls from 'data/services/lms/urls';
-import { reduxHooks } from 'hooks';
 import { EXPANDED_NAVBAR } from 'widgets/RecommendationsPaintedDoorBtn/constants';
 
 import AuthenticatedUserDropdown from './AuthenticatedUserDropdown';
@@ -16,7 +13,6 @@ import BrandLogo from '../BrandLogo';
 
 export const ExpandedHeader = () => {
   const { formatMessage } = useIntl();
-  const { courseSearchUrl } = reduxHooks.usePlatformSettingsData();
   const isCollapsed = useIsCollapsed();
 
   const exploreCoursesClick = findCoursesNavClicked('https://kursbox.pl/kursy');
